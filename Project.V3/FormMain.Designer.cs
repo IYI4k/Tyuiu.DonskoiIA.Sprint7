@@ -87,7 +87,7 @@
             buttonAdd_DIA.Name = "buttonAdd_DIA";
             buttonAdd_DIA.Size = new Size(37, 37);
             buttonAdd_DIA.TabIndex = 2;
-            toolTipTips_DIA.SetToolTip(buttonAdd_DIA, "Отменить результаты поиска");
+            toolTipTips_DIA.SetToolTip(buttonAdd_DIA, "Добавить новую строку");
             buttonAdd_DIA.UseVisualStyleBackColor = true;
             buttonAdd_DIA.Click += buttonAdd_DIA_Click;
             // 
@@ -114,26 +114,26 @@
             // toolStripMenuItemCreateFile_DIA
             // 
             toolStripMenuItemCreateFile_DIA.Name = "toolStripMenuItemCreateFile_DIA";
-            toolStripMenuItemCreateFile_DIA.Size = new Size(180, 22);
+            toolStripMenuItemCreateFile_DIA.Size = new Size(163, 22);
             toolStripMenuItemCreateFile_DIA.Text = "Новый";
             // 
             // toolStripMenuItemOpenFile_DIA
             // 
             toolStripMenuItemOpenFile_DIA.Name = "toolStripMenuItemOpenFile_DIA";
-            toolStripMenuItemOpenFile_DIA.Size = new Size(180, 22);
+            toolStripMenuItemOpenFile_DIA.Size = new Size(163, 22);
             toolStripMenuItemOpenFile_DIA.Text = "Открыть...";
             toolStripMenuItemOpenFile_DIA.Click += toolStripMenuItemOpenFile_DIA_Click;
             // 
             // toolStripMenuItemSaveFile_DIA
             // 
             toolStripMenuItemSaveFile_DIA.Name = "toolStripMenuItemSaveFile_DIA";
-            toolStripMenuItemSaveFile_DIA.Size = new Size(180, 22);
+            toolStripMenuItemSaveFile_DIA.Size = new Size(163, 22);
             toolStripMenuItemSaveFile_DIA.Text = "Сохранить";
             // 
             // toolStripMenuItemSaveFileAs_DIA
             // 
             toolStripMenuItemSaveFileAs_DIA.Name = "toolStripMenuItemSaveFileAs_DIA";
-            toolStripMenuItemSaveFileAs_DIA.Size = new Size(180, 22);
+            toolStripMenuItemSaveFileAs_DIA.Size = new Size(163, 22);
             toolStripMenuItemSaveFileAs_DIA.Text = "Сохранить как...";
             toolStripMenuItemSaveFileAs_DIA.Click += toolStripMenuItemSaveFileAs_DIA_Click;
             // 
@@ -151,22 +151,23 @@
             // 
             toolStripMenuItemOpenManual_DIA.DisplayStyle = ToolStripItemDisplayStyle.Text;
             toolStripMenuItemOpenManual_DIA.Name = "toolStripMenuItemOpenManual_DIA";
-            toolStripMenuItemOpenManual_DIA.Size = new Size(149, 22);
+            toolStripMenuItemOpenManual_DIA.Size = new Size(180, 22);
             toolStripMenuItemOpenManual_DIA.Text = "Руководство";
             toolStripMenuItemOpenManual_DIA.ToolTipText = "Открыть руководство пользователя";
             // 
             // toolStripSeparator1
             // 
             toolStripSeparator1.Name = "toolStripSeparator1";
-            toolStripSeparator1.Size = new Size(146, 6);
+            toolStripSeparator1.Size = new Size(177, 6);
             // 
             // toolStripMenuItemOpenAbout_DIA
             // 
             toolStripMenuItemOpenAbout_DIA.DisplayStyle = ToolStripItemDisplayStyle.Text;
             toolStripMenuItemOpenAbout_DIA.Name = "toolStripMenuItemOpenAbout_DIA";
-            toolStripMenuItemOpenAbout_DIA.Size = new Size(149, 22);
+            toolStripMenuItemOpenAbout_DIA.Size = new Size(180, 22);
             toolStripMenuItemOpenAbout_DIA.Text = "О программе";
             toolStripMenuItemOpenAbout_DIA.ToolTipText = "Открыть справочную информацию о ПО";
+            toolStripMenuItemOpenAbout_DIA.Click += toolStripMenuItemOpenAbout_DIA_Click;
             // 
             // tabControl1
             // 
@@ -212,6 +213,7 @@
             dataGridViewBrowseTable_DIA.Name = "dataGridViewBrowseTable_DIA";
             dataGridViewBrowseTable_DIA.Size = new Size(753, 479);
             dataGridViewBrowseTable_DIA.TabIndex = 0;
+            dataGridViewBrowseTable_DIA.CellEndEdit += dataGridViewBrowseTable_DIA_CellEndEdit;
             dataGridViewBrowseTable_DIA.Sorted += dataGridViewBrowseTable_DIA_Sorted;
             // 
             // tabPageChart

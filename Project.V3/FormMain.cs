@@ -171,7 +171,7 @@ namespace Project.V3
                 {
                     s += s2[i] + ";";
                 }
-                s += s2[s2.GetUpperBound(0)]+Environment.NewLine;
+                s += s2[s2.GetUpperBound(0)] + Environment.NewLine;
 
                 string[] s3 = table.GetTypes();
 
@@ -190,7 +190,7 @@ namespace Project.V3
                 {
                     for (int j = 0; j < ColumnsCount; j++)
                     {
-                        s+= temp_table[i, j]+";";
+                        s += temp_table[i, j] + ";";
                     }
                     s += temp_table[i, ColumnsCount] + Environment.NewLine;
                 }
@@ -207,6 +207,19 @@ namespace Project.V3
             {
                 MessageBox.Show("—бой при сохранении файла", "ќшибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void toolStripMenuItemOpenAbout_DIA_Click(object sender, EventArgs e)
+        {
+            FormAbout_DIA formAbout = new FormAbout_DIA();
+
+            formAbout.ShowDialog();
+        }
+
+        private void dataGridViewBrowseTable_DIA_CellEndEdit(object sender, DataGridViewCellEventArgs e)
+        {
+            table.ChangeCell(dataGridViewBrowseTable_DIA.CurrentCell.RowIndex, dataGridViewBrowseTable_DIA.CurrentCell.ColumnIndex, dataGridViewBrowseTable_DIA.Rows[dataGridViewBrowseTable_DIA.CurrentCell.RowIndex].Cells[dataGridViewBrowseTable_DIA.CurrentCell.ColumnIndex].Value + "");
+
         }
     }
 }

@@ -154,6 +154,7 @@
             toolStripMenuItemOpenManual_DIA.Size = new Size(180, 22);
             toolStripMenuItemOpenManual_DIA.Text = "Руководство";
             toolStripMenuItemOpenManual_DIA.ToolTipText = "Открыть руководство пользователя";
+            toolStripMenuItemOpenManual_DIA.Click += toolStripMenuItemOpenManual_DIA_Click;
             // 
             // toolStripSeparator1
             // 
@@ -208,6 +209,7 @@
             // 
             // dataGridViewBrowseTable_DIA
             // 
+            dataGridViewBrowseTable_DIA.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             dataGridViewBrowseTable_DIA.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridViewBrowseTable_DIA.Location = new Point(0, 49);
             dataGridViewBrowseTable_DIA.Name = "dataGridViewBrowseTable_DIA";

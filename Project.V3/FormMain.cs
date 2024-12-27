@@ -221,5 +221,13 @@ namespace Project.V3
             table.ChangeCell(dataGridViewBrowseTable_DIA.CurrentCell.RowIndex, dataGridViewBrowseTable_DIA.CurrentCell.ColumnIndex, dataGridViewBrowseTable_DIA.Rows[dataGridViewBrowseTable_DIA.CurrentCell.RowIndex].Cells[dataGridViewBrowseTable_DIA.CurrentCell.ColumnIndex].Value + "");
 
         }
+
+        private void toolStripMenuItemOpenManual_DIA_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process txt = new System.Diagnostics.Process();
+            txt.StartInfo.FileName = "notepad.exe";
+            txt.StartInfo.Arguments = Path.Combine(Directory.GetCurrentDirectory(), "Manual.txt");
+            txt.Start();
+        }
     }
 }

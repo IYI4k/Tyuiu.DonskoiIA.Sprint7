@@ -62,7 +62,7 @@
             buttonOK_DIA.TabIndex = 4;
             buttonOK_DIA.Text = "OK";
             buttonOK_DIA.UseVisualStyleBackColor = true;
-            buttonOK_DIA.Click += this.buttonOK_DIA_Click;
+            buttonOK_DIA.Click += buttonOK_DIA_Click;
             // 
             // FormAbout_DIA
             // 
